@@ -1,0 +1,92 @@
+<!-- 
+<div class="box"></div>
+<div class="box">
+    <img src="logo.png" alt="">
+</div>
+<div class="box"></div>
+<div class="box"></div>
+
+<div id="parent">
+
+    <div id="child">
+        
+    </div>
+    
+    
+</div>
+<style>
+    
+    #parent{
+        width:500px;
+                    height: 500px;
+                    border: 2px solid red;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                #child{
+                    width:100px;
+                    height: 100px;
+                    background-color: orange;
+                    margin: auto;
+                } 
+                
+                .box{
+                    vertical-align: top;
+                    width: 220px;
+                    height: 220px;
+                    border:2px solid red;
+                    display: inline-block;
+                }
+                
+            </style> -->
+                    <html>
+                    
+                        <body>
+                    
+                                <div id="parent">
+                                
+                                    <div class="child"></div>
+                                    <div class="child"></div>
+                                    <div class="child"></div>
+                                    
+                                </div>
+                    
+                            </body>
+                    </html>
+            
+            <style>
+
+                body{
+                    margin:0;
+                }
+            
+            /* vw
+            viewport ki width */
+            
+                #parent{
+                    width:100vw;
+                    height: 500px;
+                    border: 2px solid red;
+                    display: flex-rap;
+                    
+                    gap: 50px;
+                    justify-content: start;
+                    align-items: flex-end;
+                }
+            
+                .child:first-child{
+                    width:200px;                    
+                    /* row-gap: 2px; */
+                    
+
+
+                }
+            
+                .child{
+                    width:100px;
+                    height: 100px;
+                    background-color: orange;  
+                }
+            
+            
+    
